@@ -1,25 +1,29 @@
+/* Styles applied to the entire page */
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0f172a;
-  color: white;
+  margin: 0; /* Removes default browser spacing around the page */
+  font-family: Arial, Helvetica, sans-serif; /* Sets the font stack */
+  background: #342150; /* Dark purple background color */
+  color: white; /* Makes all text white by default */
 }
 
+/* Styles for the main container div */
 .container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  min-height: 100vh; /* Makes container at least full screen height */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center; /* Centers text inside the container */
 }
 
+/* Styles for the main heading */
 h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3rem; /* Makes the heading large */
+  margin-bottom: 1rem; /* Adds space below the heading */
 }
 
+/* Styles for paragraph text */
 p {
-  font-size: 1.25rem;
-  opacity: 0.85;
+  font-size: 1.25rem; /* Slightly larger than normal text */
+  opacity: 0.85; /* Makes text slightly transparent */
 }
