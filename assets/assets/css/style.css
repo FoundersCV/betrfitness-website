@@ -1,7 +1,7 @@
 /* Styles applied to the entire page */
 body {
   margin: 0; /* Removes default browser spacing around the page */
-  font-family: Arial, Helvetica, sans-serif; /* Sets the font stack */
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Matches BetrFitness logo font with safe fallbacks */
   background: #2B144A; /* Dark purple background color */
   color: #2EC4F1; /* Makes all text blue by default */
 }
@@ -25,7 +25,7 @@ h1 {
   margin-bottom: 1rem;
 
   /* Applies a looping orange → blue → orange gradient */
-  background: linear-gradient(90deg, #F45A1C, #2EC4F1, #F45A1C);
+  background: linear-gradient(to right, #F45A1C, #2EC4F1, #F45A1C, #2EC4F1);
 
   /* Enlarges the gradient area so it can animate smoothly */
   background-size: 200% 200%;
@@ -38,7 +38,7 @@ h1 {
   color: transparent;
 
   /* Animates the gradient back and forth */
-  animation: flameShift 4s ease infinite;
+  animation: flameShift 6s ease infinite;
 }
 
 /* Controls how the gradient moves over time */
