@@ -31,25 +31,59 @@ h1 {
   font-style: italic; /* Italicizes the text */
   padding-right: 0.25em; /* Prevents the last italic character from being clipped */
 
-  background: linear-gradient(to right, #F45A1C 0%, #2EC4F1 50%, #F45A1C 100%); /* Seamless orange → blue → orange */
-  background-size: 300% 100%; /* Gives the gradient plenty of room to move smoothly */
-  background-repeat: repeat; /* Lets the gradient pattern tile to avoid visible “ends” */
+  background-image: linear-gradient(
+    to right,
+    #F45A1C 0%, /* Orange start */
+    #2EC4F1 50%, /* Blue center */
+    #F45A1C 100% /* Orange end */
+  ); /* Define animated gradient */
 
-  -webkit-background-clip: text; /* Clips gradient to text (Safari/Chrome) */
-  background-clip: text; /* Standard clipping */
-  color: transparent; /* Makes gradient visible */
-  -webkit-text-fill-color: transparent; /* REQUIRED for mobile Safari */
+  background-size: 400% 100%; /* Extra-wide gradient for smooth motion */
+  background-repeat: no-repeat; /* Prevent tiling seams */
+  background-position: 0% 50%; /* Starting gradient position */
 
-  animation: flameShift 8s linear infinite; /* Linear prevents the “stop/pause” feeling */
-}
+  -webkit-background-clip: text; /* Clip gradient to text (Safari/Chrome) */
+  background-clip: text; /* Standard background clipping */
+  color: transparent; /* Hide normal text color */
+  -webkit-text-fill-color: transparent; /* Required for gradient text on iOS */
 
-@keyframes flameShift {
-  0% { background-position: 0% 50%; } /* Starts gradient at the left */
-  100% { background-position: 100% 50%; } /* Moves gradient smoothly across */
-}
+  animation-name: flameShift, glowPulse; /* Run gradient + glow animations */
+  animation-duration: 10s, 6s; /* Gradient speed, glow speed */
+  animation-timing-function: ease-in-out, ease-in-out; /* Smooth motion */
+  animation-iteration-count: infinite, infinite; /* Loop both animations */
+  animation-direction: alternate, alternate; /* Reverse smoothly */
+  animation-fill-mode: both; /* Retain correct animation state */
+  animation-play-state: running; /* Ensure animation executes */
+  will-change: background-position, text-shadow; /* Hint for performance */
+} /* End h1 */
 
-/* Styles for paragraph text */
-p {
-  font-size: 1.25rem; /* Slightly larger than normal text */
-  opacity: 1; /* Makes text slightly transparent */
-}
+/* ===== Gradient animation ===== */ /* Section header */
+@keyframes flameShift { /* Define gradient movement */
+  0% { /* Animation start */
+    background-position: 0% 50%; /* Gradient begins left */
+  }
+  100% { /* Animation end */
+    background-position: 100% 50%; /* Gradient moves right */
+  }
+} /* End flameShift */
+
+/* ===== Subtle glow animation ===== */ /* Section header */
+@keyframes glowPulse { /* Define glow pulsing */
+  0% { /* Start of glow cycle */
+    text-shadow:
+      0 0 6px rgba(244, 90, 28, 0.35), /* Soft orange glow */
+      0 0 12px rgba(46, 196, 241, 0.25); /* Soft blue glow */
+  }
+  100% { /* End of glow cycle */
+    text-shadow:
+      0 0 14px rgba(244, 90, 28, 0.55), /* Stronger orange glow */
+      0 0 28px rgba(46, 196, 241, 0.45); /* Stronger blue glow */
+  }
+} /* End glowPulse */
+
+/* ===== Paragraph styling ===== */ /* Section header */
+p { /* Target tagline text */
+  font-size: 1.25rem; /* Slightly larger than normal */
+  margin: 0; /* Remove default margin */
+  opacity: 1; /* Fully visible */
+} /* End p */
