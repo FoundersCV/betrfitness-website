@@ -11,7 +11,7 @@ body {
   min-height: 100vh; /* Makes container at least full screen height */
   display: flex; /* Enables Flexbox layout */
   flex-direction: column; /* Stacks children vertically */
-  justify-content: center; /* Centers content vertically */
+  justify-content: top; /* Centers content vertically */
   align-items: center; /* Centers content horizontally */
   text-align: center; /* Centers text inside the container */
 }
@@ -22,6 +22,8 @@ h1 {
   margin-bottom: 1rem; /* Adds space below the heading */
   font-weight: 700; /* Makes the text bold to match the logo */
   font-style: italic; /* Italicizes the text for emphasis and motion */
+
+  padding-right: 0.2em; /* Prevents italic characters from being clipped */
 
   /* Applies a looping orange → blue → orange gradient */
   background: linear-gradient(to right, #F45A1C, #2EC4F1, #F45A1C, #2EC4F1);
@@ -56,5 +58,5 @@ h1 {
 /* Styles for paragraph text */
 p {
   font-size: 1.25rem; /* Slightly larger than normal text */
-  opacity: 0; /* Makes text slightly transparent */
+  opacity: 1; /* Makes text slightly transparent */
 }
