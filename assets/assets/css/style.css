@@ -37,7 +37,7 @@ h1 {
   color: transparent;
 
   /* Animates the gradient back and forth */
-  animation: flameShift 6s ease infinite;
+  animation: flameShift 7s ease infinite;
 }
 
 /* Controls how the gradient moves over time */
