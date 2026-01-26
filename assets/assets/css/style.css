@@ -33,7 +33,7 @@ h1 {
   background-clip: text; /* Standard clipping */
   color: transparent; /* Makes gradient visible */
 
-  animation: flameShift 6s linear infinite; /* Linear prevents the “stop/pause” feeling */
+  animation: flameShift 8s linear infinite; /* Linear prevents the “stop/pause” feeling */
 }
 
 @keyframes flameShift {
