@@ -2,7 +2,7 @@
 body {
   margin: 0; /* Removes default browser spacing around the page */
   font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Matches BetrFitness logo font with safe fallbacks */
-  background: #281542; /* Dark purple background color */
+  background: #26133F; /* Dark purple background color */
   color: #2EC4F1; /* Makes all text blue by default */
 }
 
@@ -29,7 +29,6 @@ h1 {
   margin-bottom: 1rem; /* Adds space below the heading */
   font-weight: 700; /* Makes the text bold */
   font-style: italic; /* Italicizes the text */
-
   padding-right: 0.25em; /* Prevents the last italic character from being clipped */
 
   background: linear-gradient(to right, #F45A1C 0%, #2EC4F1 50%, #F45A1C 100%); /* Seamless orange → blue → orange */
@@ -39,13 +38,14 @@ h1 {
   -webkit-background-clip: text; /* Clips gradient to text (Safari/Chrome) */
   background-clip: text; /* Standard clipping */
   color: transparent; /* Makes gradient visible */
+  -webkit-text-fill-color: transparent; /* REQUIRED for mobile Safari */
 
   animation: flameShift 8s linear infinite; /* Linear prevents the “stop/pause” feeling */
 }
 
 @keyframes flameShift {
-  0% { background-position: 0% 50% 100%; } /* Starts gradient at the left */
-  100% { background-position: 100% 50% 0%; } /* Moves gradient smoothly across */
+  0% { background-position: 0% 50%; } /* Starts gradient at the left */
+  100% { background-position: 100% 50%; } /* Moves gradient smoothly across */
 }
 
 /* Styles for paragraph text */
