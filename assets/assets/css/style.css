@@ -18,11 +18,10 @@ body {
 
 /* Styles for the main heading */
 h1 {
-  /* Makes the heading large */
-  font-size: 3rem;
-
-  /* Adds space below the heading */
-  margin-bottom: 1rem;
+  font-size: 3rem; /* Makes the heading large */
+  margin-bottom: 1rem; /* Adds space below the heading */
+  font-weight: 700; /* Makes the text bold to match the logo */
+  font-style: italic; /* Italicizes the text for emphasis and motion */
 
   /* Applies a looping orange → blue → orange gradient */
   background: linear-gradient(to right, #F45A1C, #2EC4F1, #F45A1C, #2EC4F1);
