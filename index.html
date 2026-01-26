@@ -1,62 +1,64 @@
 <!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
 <html lang="en"> <!-- Root HTML element, language set to English -->
+
 <head>
-  <meta charset="UTF-8" /> <!-- Ensures text renders correctly (UTF-8 encoding) -->
+  <meta charset="UTF-8" /> <!-- Ensures text renders correctly using UTF-8 encoding -->
 
   <title>BetrFitness</title> <!-- Text shown in the browser tab -->
 
-  <!-- Loads the Montserrat font to match the BetrFitness logo -->
+  <!-- Loads the Montserrat font to match the BetrFitness brand -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
     rel="stylesheet"
   >
 
-  <!-- Links this HTML file to the CSS stylesheet for styling -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Links this HTML file to your existing CSS (keeps background + text styles) -->
+  <link rel="stylesheet" href="assets/assets/css/style.css">
   <!-- 
-    Path explanation:
-    assets/        → main assets folder
-    css/           → stylesheet folder
-    style.css      → main CSS file
+    assets/assets/css/style.css
+    └─ first assets  → project assets folder
+       second assets → nested assets folder
+       css           → styles folder
+       style.css     → main stylesheet
   -->
 </head>
 
-<body> <!-- Everything visible on the page goes inside <body> -->
+<body> <!-- Everything visible on the page goes inside the body -->
 
-  <!-- Logo section at the top of the page -->
-  <div style="text-align: center; margin-top: 40px;">
+  <!-- Logo section -->
+  <div class="logo-container">
     <!-- 
-      This div centers the logo horizontally
-      margin-top adds spacing from the top of the page
+      This div wraps the logo.
+      Styling should come from CSS, not inline styles,
+      so it doesn't override your existing design.
     -->
 
     <img
-      src="assets/assets/branding/Logo Cropped.png"
+      src="assets/assets/brading/Logo Cropped.png"
       alt="BetrFitness Logo"
-      width="200"
+      class="logo"
     />
     <!--
-      img tag displays the logo image
-      src: path to the logo file
-      alt: accessibility text + fallback if image fails
-      width: controls the display size of the logo
+      src   → exact path to the logo file
+      alt   → accessibility text + fallback
+      class → allows styling in CSS
     -->
   </div>
 
-  <!-- A wrapper div used for layout and centering -->
+  <!-- Main content container -->
   <div class="container">
     <!-- 
-      container class is typically styled in CSS
-      used to control width, alignment, and spacing
+      This container already existed in your project
+      and controls layout, spacing, and alignment
     -->
 
-    <!-- Main headline text -->
+    <!-- Main headline -->
     <h1>BetrFitness</h1>
-    <!-- Primary heading for the page -->
+    <!-- Primary page heading -->
 
-    <!-- Supporting paragraph text -->
+    <!-- Supporting tagline -->
     <p>Raise the Bar, Set the Odds</p>
-    <!-- Tagline / supporting message under the heading -->
+    <!-- Secondary text under the headline -->
 
   </div>
 
