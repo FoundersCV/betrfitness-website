@@ -2,7 +2,7 @@
 body {
   margin: 0; /* Removes default browser spacing around the page */
   font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Matches BetrFitness logo font with safe fallbacks */
-  background: #2B144A; /* Dark purple background color */
+  background: #281542; /* Dark purple background color */
   color: #2EC4F1; /* Makes all text blue by default */
 }
 
