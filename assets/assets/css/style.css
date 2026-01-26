@@ -32,7 +32,7 @@ h1 {
 
   padding-right: 0.25em; /* Prevents the last italic character from being clipped */
 
-  background: linear-gradient(90deg, #F45A1C 0%, #2EC4F1 50%, #F45A1C 100%); /* Seamless orange → blue → orange */
+  background: linear-gradient(to right, #F45A1C 0%, #2EC4F1 50%, #F45A1C 100%); /* Seamless orange → blue → orange */
   background-size: 300% 100%; /* Gives the gradient plenty of room to move smoothly */
   background-repeat: repeat; /* Lets the gradient pattern tile to avoid visible “ends” */
 
