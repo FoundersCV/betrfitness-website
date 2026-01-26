@@ -18,8 +18,40 @@ body {
 
 /* Styles for the main heading */
 h1 {
-  font-size: 3rem; /* Makes the heading large */
-  margin-bottom: 1rem; /* Adds space below the heading */
+  /* Makes the heading large */
+  font-size: 3rem;
+
+  /* Adds space below the heading */
+  margin-bottom: 1rem;
+
+  /* Applies a looping orange → blue → orange gradient */
+  background: linear-gradient(90deg, #F45A1C, #2EC4F1, #F45A1C);
+
+  /* Enlarges the gradient area so it can animate smoothly */
+  background-size: 200% 200%;
+
+  /* Clips the gradient so it only shows inside the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Makes the text transparent so the gradient is visible */
+  color: transparent;
+
+  /* Animates the gradient back and forth */
+  animation: flameShift 4s ease infinite;
+}
+
+/* Controls how the gradient moves over time */
+@keyframes flameShift {
+  /* Starting position of the gradient */
+  0% {
+    background-position: 0% 50%;
+  }
+
+  /* Ending position of the gradient */
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /* Styles for paragraph text */
