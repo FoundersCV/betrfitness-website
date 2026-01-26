@@ -6,22 +6,59 @@
   <title>BetrFitness</title> <!-- Text shown in the browser tab -->
 
   <!-- Loads the Montserrat font to match the BetrFitness logo -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- Links this HTML file to the CSS stylesheet for styling -->
-  <link rel="stylesheet" href="assets/assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 
+    Path explanation:
+    assets/        → main assets folder
+    css/           → stylesheet folder
+    style.css      → main CSS file
+  -->
 </head>
+
 <body> <!-- Everything visible on the page goes inside <body> -->
+
+  <!-- Logo section at the top of the page -->
+  <div style="text-align: center; margin-top: 40px;">
+    <!-- 
+      This div centers the logo horizontally
+      margin-top adds spacing from the top of the page
+    -->
+
+    <img
+      src="assets/branding/logo.png"
+      alt="BetrFitness Logo"
+      width="200"
+    />
+    <!--
+      img tag displays the logo image
+      src: path to the logo file
+      alt: accessibility text + fallback if image fails
+      width: controls the display size of the logo
+    -->
+  </div>
 
   <!-- A wrapper div used for layout and centering -->
   <div class="container">
+    <!-- 
+      container class is typically styled in CSS
+      used to control width, alignment, and spacing
+    -->
 
     <!-- Main headline text -->
     <h1>BetrFitness</h1>
+    <!-- Primary heading for the page -->
 
     <!-- Supporting paragraph text -->
     <p>Raise the Bar, Set the Odds</p>
+    <!-- Tagline / supporting message under the heading -->
 
   </div>
+
 </body>
 </html>
