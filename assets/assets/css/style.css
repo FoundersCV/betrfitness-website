@@ -11,9 +11,16 @@ body {
   min-height: 100vh; /* Makes container at least full screen height */
   display: flex; /* Enables Flexbox layout */
   flex-direction: column; /* Stacks children vertically */
-  justify-content: top; /* Centers content vertically */
+  justify-content: center; /* Centers content vertically */
   align-items: center; /* Centers content horizontally */
   text-align: center; /* Centers text inside the container */
+}
+
+/* Logo styling */
+.logo {
+  width: 220px; /* Controls logo size */
+  height: auto; /* Keeps the image proportional */
+  margin-bottom: 24px; /* Adds space between logo and the heading */
 }
 
 /* Styles for the main heading */
@@ -37,8 +44,8 @@ h1 {
 }
 
 @keyframes flameShift {
-  0% { background-position: 0% 50%; } /* Starts gradient at the left */
-  100% { background-position: 100% 50%; } /* Moves gradient smoothly across */
+  0% { background-position: 0% 50% 100%; } /* Starts gradient at the left */
+  100% { background-position: 100% 50% 0%; } /* Moves gradient smoothly across */
 }
 
 /* Styles for paragraph text */
