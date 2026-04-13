@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support | BetrFitness</title>
+  <meta name="description" content="Need help with BetrFitness? Contact support, browse FAQs, and get guidance on account help, bug reports, and feature requests." />
+  <meta property="og:title" content="BetrFitness Support" />
+  <meta property="og:description" content="Get support for account questions, bugs, features, and launch details." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://betrfitness.com/support.html" />
+  <meta property="og:image" content="/assets/assets/branding/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BetrFitness Support" />
+  <meta name="twitter:description" content="Need help? Reach the BetrFitness support team." />
+  <link rel="icon" type="image/png" href="/assets/assets/branding/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/assets/css/style.css" />
+  <script defer src="/assets/assets/js/app.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content">
+    <section class="section support-hero">
+      <div class="container section-head" data-reveal>
+        <span class="eyebrow">Support</span>
+        <h1 class="section-title">Need help?</h1>
+        <p>
+          We’re here to help with account questions, product issues, and launch updates.
+          Use the form below and the BetrFitness team will follow up as quickly as possible.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container support-grid">
+        <section class="form-card" aria-labelledby="support-form-heading" data-reveal>
+          <h2 id="support-form-heading">Contact Support</h2>
+          <p>Share as much detail as possible so we can route your message correctly.</p>
+
+          <form data-support-form novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+                <span class="error-text" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <span class="error-text" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="">Select a topic</option>
+                <option value="general-question">General question</option>
+                <option value="account-help">Account help</option>
+                <option value="bug-report">Bug report</option>
+                <option value="feature-request">Feature request</option>
+                <option value="partnership-inquiry">Partnership inquiry</option>
+                <option value="legal-privacy-question">Legal/privacy question</option>
+              </select>
+              <span class="error-text" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <span class="error-text" aria-live="polite"></span>
+            </div>
+
+            <button class="form-submit" type="submit">Submit Request</button>
+            <p class="form-note">
+              Backend note: this form is ready for API wiring. Set
+              <code>SUPPORT_ENDPOINT</code> in
+              <code>assets/assets/js/app.js</code> to connect a server endpoint,
+              Formspree, Resend, or server action handler.
+            </p>
+            <p class="form-status" data-form-status aria-live="polite"></p>
+          </form>
+        </section>
+
+        <aside>
+          <section class="support-card" data-reveal>
+            <h2>Support details</h2>
+            <p>
+              Email: <a class="inline-link" href="mailto:support@betrfitness.com">support@betrfitness.com</a>
+            </p>
+            <p>Typical response window: within 1–2 business days.</p>
+            <p>
+              For legal requests, review our
+              <a class="inline-link" href="/legal/index.html">Legal Center</a>.
+            </p>
+          </section>
+          <section class="support-card" data-reveal>
+            <h2>Launch readiness</h2>
+            <p>
+              BetrFitness is in active development. Store links are currently placeholders
+              and will be updated when iOS and Android listings go live.
+            </p>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section-title">Support FAQ</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">What is BetrFitness?</button>
+            <div class="faq-panel" hidden>
+              <p>BetrFitness is a fitness app focused on consistency, accountability, and progress through gamified engagement.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">When will the app be available?</button>
+            <div class="faq-panel" hidden>
+              <p>Launch details are coming soon. You can follow updates through this site and future app store links.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">Will BetrFitness support iPhone and Android?</button>
+            <div class="faq-panel" hidden>
+              <p>Yes. BetrFitness is being built for both iOS and Android.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">How do I report a bug?</button>
+            <div class="faq-panel" hidden>
+              <p>Use the support form and choose “Bug report,” then include device details and steps to reproduce.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">How do I contact support?</button>
+            <div class="faq-panel" hidden>
+              <p>Use this page’s form or email <a class="inline-link" href="mailto:support@betrfitness.com">support@betrfitness.com</a>.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">Is my personal data secure?</button>
+            <div class="faq-panel" hidden>
+              <p>We maintain security controls and publish data practices in our Privacy Policy.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">Will there be premium features?</button>
+            <div class="faq-panel" hidden>
+              <p>Premium options are being evaluated as the product roadmap evolves.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">Can I suggest a feature?</button>
+            <div class="faq-panel" hidden>
+              <p>Yes. Submit your request through the support form using the “Feature request” topic.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>

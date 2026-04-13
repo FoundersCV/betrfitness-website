@@ -1,53 +1,274 @@
-<!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
-<html lang="en"> <!-- Root HTML element, language set to English -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" /> <!-- Ensures text renders correctly using UTF-8 encoding -->
-
-  <title>BetrFitness</title> <!-- Text shown in the browser tab -->
-
-  <!-- Loads the Montserrat font to match the BetrFitness brand -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- Links this HTML file to your existing CSS (keeps background + text styles) -->
-  <link rel="stylesheet" href="assets/assets/css/style.css">
-  <!-- 
-    assets/assets/css/style.css
-    └─ first assets  → project assets folder
-       second assets → nested assets folder
-       css           → styles folder
-       style.css     → main stylesheet
-  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetrFitness | Fitness That Keeps You Engaged</title>
+  <meta name="description" content="BetrFitness turns workouts into momentum with gamified progression, streaks, accountability, and competitive energy built for sustainable fitness habits." />
+  <meta property="og:title" content="BetrFitness | Raise the Bar, Set the Odds" />
+  <meta property="og:description" content="A premium fitness app experience designed for consistency, motivation, and measurable progress." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://betrfitness.com/" />
+  <meta property="og:image" content="/assets/assets/branding/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BetrFitness | Fitness That Keeps You Engaged" />
+  <meta name="twitter:description" content="More than tracking. A better way to stay in the game." />
+  <link rel="icon" type="image/png" href="/assets/assets/branding/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/assets/css/style.css" />
+  <script defer src="/assets/assets/js/app.js"></script>
 </head>
-
 <body>
-  <!-- Main container that controls background, layout, and centering -->
-  <div class="container">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header" data-site-header></header>
 
-    <!-- Logo -->
-    <img
-      src="assets/assets/branding/logo.png"
-      alt="BetrFitness Logo"
-      class="logo"
-    />
-    <!-- Logo image, styled via CSS -->
+  <main id="main-content">
+    <section class="section hero-section">
+      <div class="container hero-grid">
+        <div data-reveal>
+          <span class="eyebrow">Gamified fitness platform</span>
+          <h1 class="hero-title">
+            Build <span class="brand-gradient">consistency</span> with a system
+            that turns effort into momentum.
+          </h1>
+          <p class="hero-copy">
+            BetrFitness is more than a workout log. It combines progression loops,
+            streak mechanics, and competitive energy to help you stay engaged,
+            accountable, and focused on measurable results.
+          </p>
+          <div class="hero-actions" id="download">
+            <div class="store-buttons" data-store-buttons></div>
+            <a class="secondary-btn" href="#features">Explore Features</a>
+          </div>
+          <p class="trust-note">
+            Built for athletes, lifters, and anyone who wants more purpose,
+            consistency, and competition in fitness.
+          </p>
+        </div>
 
-    <!-- Main headline -->
-    <h1>BetrFitness</h1>
+        <div class="mockup-stack" aria-label="BetrFitness app preview mockup" data-reveal>
+          <div class="mockup-glow" aria-hidden="true"></div>
+          <div class="phone-shell">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="screen-bar">
+                <span>Today</span>
+                <span>Consistency 12d</span>
+              </div>
+              <article class="screen-card">
+                <strong>Performance Score</strong>
+                <p>+18% this week from volume and completion rate.</p>
+                <div class="screen-progress" aria-hidden="true"><span></span></div>
+              </article>
+              <article class="screen-card">
+                <strong>Streak Challenge</strong>
+                <p>2 sessions left to lock in your weekly milestone.</p>
+              </article>
+              <article class="screen-card">
+                <strong>Next Wager</strong>
+                <p>Back your next workout outcome and beat your previous personal line.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Supporting tagline -->
-    <p>Raise the Bar, Set the Odds</p>
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Value proposition</span>
+          <h2 class="section-title">Fitness apps often lose people when motivation fades. BetrFitness is built to prevent that.</h2>
+          <p>
+            Generic trackers can make progress feel flat. BetrFitness is designed to
+            keep people in the game through accountability, challenge, and
+            progression mechanics that reward consistency, not just one good week.
+          </p>
+        </div>
+        <div class="value-grid">
+          <article class="value-card" data-reveal>
+            <h3>Consistency over intensity spikes</h3>
+            <p>Make repeatable habits easier to sustain with streaks, milestones, and reminders tied to your goals.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <h3>Motivation with real structure</h3>
+            <p>Turn your training into a goal-based system with clear outcomes and feedback you can actually feel.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <h3>Accountability that stays personal</h3>
+            <p>Track your own momentum while using social and competitive cues when you need an extra push.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <h3>Progress that feels meaningful</h3>
+            <p>See performance trends, consistency metrics, and achievement loops that make every week count.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  </div>
-  
-<footer style="text-align: center; margin-top: 40px;">
-  <p>Legal</p>
-  <a href="/legal/privacy-policy.html">Privacy Policy</a> |
-  <a href="/legal/terms-of-use.html">Terms of Use</a>
-</footer>
-  
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Core features</span>
+          <h2 class="section-title">Everything needed to stay committed and keep leveling up</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">GM</div>
+            <h3>Gamified fitness experience</h3>
+            <p>Make every session feel active and engaging with challenge loops and dynamic progression.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">TR</div>
+            <h3>Progress tracking</h3>
+            <p>Track training output, completion, and long-term trends with clean performance insights.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">ST</div>
+            <h3>Streak mechanics</h3>
+            <p>Build consistency through streak systems designed to reward discipline and repeat behavior.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">MS</div>
+            <h3>Milestones & achievements</h3>
+            <p>Break big goals into measurable wins to keep momentum high across every training block.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">PJ</div>
+            <h3>Personalized journey</h3>
+            <p>Shape the experience around your baseline, your goals, and the pace you can sustain.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">AC</div>
+            <h3>Accountability system</h3>
+            <p>Stay consistent with structured prompts and outcomes that reduce drift and indecision.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">CP</div>
+            <h3>Competitive energy</h3>
+            <p>Tap into healthy competition and social motivation that keeps training sessions purposeful.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">RW</div>
+            <h3>Rewards loops</h3>
+            <p>Connect effort to progress with systems that reinforce daily action and long-term habit formation.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true">FR</div>
+            <h3>Future-ready ecosystem</h3>
+            <p>Built to evolve with deeper personalization, expanded community systems, and richer analytics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container content-grid">
+        <article class="content-card" data-reveal>
+          <span class="eyebrow">Why BetrFitness</span>
+          <h2 class="section-title">Not passive content. Not just logging.</h2>
+          <p>
+            Traditional apps often stop at data entry. BetrFitness is designed to
+            create commitment, momentum, and measurable progress through a more
+            interactive fitness experience.
+          </p>
+          <ul class="bullet-list">
+            <li>Designed around behavior change, not just content consumption</li>
+            <li>Built to keep motivation alive long after week one</li>
+            <li>Focused on sustainable engagement, not temporary hype</li>
+          </ul>
+        </article>
+        <article class="content-card" id="vision" data-reveal>
+          <span class="eyebrow">Vision</span>
+          <h2 class="section-title">A better system for long-term fitness engagement</h2>
+          <p>
+            BetrFitness exists to solve disengagement, inconsistency, and motivation
+            drop-off. The long-term mission is to make fitness more competitive,
+            rewarding, social, and habit-forming for anyone serious about progress.
+          </p>
+          <p>
+            This is a platform for people who want meaningful structure, clear
+            goals, and momentum they can sustain.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="preview-heading">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">App preview</span>
+          <h2 class="section-title" id="preview-heading">Screenshot-ready layout for upcoming product visuals</h2>
+          <p>Drop real UI screenshots into these cards as product assets become available.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="preview-card" data-reveal>
+            <div class="preview-screen">Home dashboard<br />Placeholder screen</div>
+            <h3>Daily dashboard</h3>
+            <p>A quick view of your streaks, goals, and current momentum.</p>
+          </article>
+          <article class="preview-card" data-reveal>
+            <div class="preview-screen">Workout flow<br />Placeholder screen</div>
+            <h3>Workout progression</h3>
+            <p>Track outcomes and build progress over time with structured checkpoints.</p>
+          </article>
+          <article class="preview-card" data-reveal>
+            <div class="preview-screen">Challenge view<br />Placeholder screen</div>
+            <h3>Challenges and milestones</h3>
+            <p>Stay engaged with goal loops that reinforce accountability every week.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">FAQ preview</span>
+          <h2 class="section-title">Answers to common questions</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">What is BetrFitness?</button>
+            <div class="faq-panel" hidden>
+              <p>BetrFitness is a fitness platform built around progression, accountability, and gamified engagement to help people stay consistent.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">When will the app be available?</button>
+            <div class="faq-panel" hidden>
+              <p>Public launch timing will be announced soon. Download placeholders are live now and will be updated when store listings are ready.</p>
+            </div>
+          </article>
+          <article class="faq-item" data-faq-item data-reveal>
+            <button type="button" class="faq-question" aria-expanded="false">Will BetrFitness support iPhone and Android?</button>
+            <div class="faq-panel" hidden>
+              <p>Yes. BetrFitness is being prepared for both iOS and Android release channels.</p>
+            </div>
+          </article>
+        </div>
+        <p style="margin-top:1rem;" data-reveal>
+          Need more details? Visit the full <a class="inline-link" href="/support.html">Support page</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-panel" data-reveal>
+        <span class="eyebrow">Final call to action</span>
+        <h2>Join early and stay connected for launch.</h2>
+        <p>
+          Be first to know when BetrFitness is available. Start your next chapter
+          with a platform engineered for consistency, accountability, and
+          performance-focused momentum.
+        </p>
+        <div class="store-buttons" data-store-buttons></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
 </body>
 </html>
